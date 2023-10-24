@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RiyanCarPort</title> 
+    <link rel="stylesheet" href="assets/style.css" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    /> 
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+              <div class="logo">
+                <a href="index.html"><img src="assets/images/logo.png" alt="Logo" width="65px" /></a>
+                <h2>Riyan <br> CarShowroom</h2>
+              </div>
+              <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="p2.html">Profile</a></li>
+                    <li><a href="p3.html">Produk CarShowroom</a></li> 
+                    <li><a href="p4.html">Form Aduan</a></li>
+                  </ul>
+              </nav>
+              <a href=""><img src="assets/images/cart.png" alt="cart" width="30px" height="30px"></a>
+              <img src="assets/images/menu.png" alt="cart" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row"> 
+              <div class="col-2 text-align-center"> 
+                <div class="box-form-aduan">
+                    <form action="" class="text-align-start">
+                        <label for="" >Nama</label>
+                        <input type="text" class="form-control" placeholder="Nama">
+                        <label for="">Nama Mobil</label>
+                        <input type="text" class="form-control" placeholder="Nama Mobil">
+                        <label for="">Tahun Mobil</label>
+                        <input type="number" class="form-control" placeholder="Tahun Mobil">
+                        <label for="">Alamat</label>
+                        <input type="text" class="form-control" placeholder="Alamat">
+                        <label for="">Keluhan</label>
+                        <textarea name="" id="" cols="30" rows="10" class="form-control">Keluhan</textarea>
+                        <button class="btn">Kirim Aduan</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div> 
+
+
+ 
+ 
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Unduh Aplikasi Kami</h3>
+                    <p>Unduh Aplikasi untuk ponsel Android dan ios.</p>
+                    <div class="app-logo">
+                        <img src="assets/images/play-store.png" alt="Play Store">
+                        <img src="assets/images/app-store.png" alt="App Store">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="assets/images/logo.png" alt="Logo White">
+                </div>
+                <div class="footer-col-3">
+                    <h3>Link Terkait</h3>
+                    <ul>
+                        <li>Home</li>
+                        <li>Profile</li>
+                        <li>Tentang CartPort</li>
+                        <li>Form Aduan</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Ikuti Kami</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright" >Copyright 2023 - RiyanCarPort</p>
+        </div>
+    </div>
+    <script>
+        feather.replace()
+        </script>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px"
+            }else{
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+  </body>
+  </html>
+  
